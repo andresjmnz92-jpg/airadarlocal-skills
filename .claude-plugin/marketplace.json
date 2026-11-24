@@ -1,0 +1,74 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "airadarlocal-skills",
+  "owner": {
+    "name": "AI Radar Local",
+    "url": "https://airadarlocal.com"
+  },
+  "metadata": {
+    "description": "Bilingual local SEO and AI visibility workflows for the AI Radar Local MCP.",
+    "version": "0.1.1"
+  },
+  "plugins": [
+    {
+      "name": "airadarlocal-en",
+      "displayName": "AI Radar Local (English)",
+      "description": "Six English workflows for local visibility, content gaps, technical SEO, and Google Business Profile.",
+      "version": "0.1.1",
+      "author": {
+        "name": "AI Radar Local",
+        "url": "https://airadarlocal.com"
+      },
+      "homepage": "https://github.com/andresjmnz92-jpg/airadarlocal-skills",
+      "repository": "https://github.com/andresjmnz92-jpg/airadarlocal-skills",
+      "category": "productivity",
+      "tags": ["local-seo", "ai-visibility", "marketing"],
+      "source": {
+        "source": "git-subdir",
+        "url": "andresjmnz92-jpg/airadarlocal-skills",
+        "path": "skills",
+        "ref": "v0.1.1",
+        "sha": "035010b093110792954e05c4e42798fd02f2c07d"
+      },
+      "strict": false,
+      "skills": [
+        "./en/90-day-plan",
+        "./en/content",
+        "./en/gaps",
+        "./en/google-profile",
+        "./en/questions",
+        "./en/technical-check"
+      ]
+    },
+    {
+      "name": "airadarlocal-es",
+      "displayName": "AI Radar Local (Español)",
+      "description": "Seis flujos en español para visibilidad local, huecos de contenido, SEO técnico y Perfil de Negocio de Google.",
+      "version": "0.1.1",
+      "author": {
+        "name": "AI Radar Local",
+        "url": "https://airadarlocal.com"
+      },
+      "homepage": "https://github.com/andresjmnz92-jpg/airadarlocal-skills",
+      "repository": "https://github.com/andresjmnz92-jpg/airadarlocal-skills",
+      "category": "productivity",
+      "tags": ["local-seo", "ai-visibility", "marketing"],
+      "source": {
+        "source": "git-subdir",
+        "url": "andresjmnz92-jpg/airadarlocal-skills",
+        "path": "skills",
+        "ref": "v0.1.1",
+        "sha": "035010b093110792954e05c4e42798fd02f2c07d"
+      },
+      "strict": false,
+      "skills": [
+        "./es/chequeo-tecnico",
+        "./es/contenido",
+        "./es/huecos",
+        "./es/perfil-google",
+        "./es/plan-90-dias",
+        "./es/preguntas"
+      ]
+    }
+  ]
+}

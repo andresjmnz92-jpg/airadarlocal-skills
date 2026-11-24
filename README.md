@@ -1,6 +1,6 @@
 # AI Radar Local Agent Skills
 
-Version: `0.1.0` (draft)
+Version: `0.1.1`
 
 Bilingual Agent Skills for local visibility research and content workflows. These skills are designed to work with the AI Radar Local MCP at `https://app.airadarlocal.com/mcp`; connect the MCP separately in your AI client. The skills provide workflow guidance. They do not grant access to an account or business data by themselves.
 
@@ -37,6 +37,17 @@ foreach ($skill in $skills) { gh skill install andresjmnz92-jpg/airadarlocal-ski
 ```
 
 For Claude Code, replace `codex` with `claude-code`. To install only one skill, replace the loop with an individual command, for example `gh skill install andresjmnz92-jpg/airadarlocal-skills skills/es/preguntas --agent codex --scope user`. To install at project scope, use `--scope project` instead of `--scope user`.
+
+## Install in Claude Code with the marketplace
+
+The public marketplace offers one plugin per language, so the same workflow is not loaded twice. In a Claude Code session, run:
+
+```text
+/plugin marketplace add andresjmnz92-jpg/airadarlocal-skills
+/plugin install airadarlocal-en@airadarlocal-skills
+```
+
+Choose `airadarlocal-es@airadarlocal-skills` for Spanish. Review the plugin details and select the install scope when Claude Code asks. This plugin installs the skills only. Connect the AI Radar Local MCP separately at `https://app.airadarlocal.com/mcp`.
 
 ## Claude web
 
