@@ -58,7 +58,7 @@ Install from this repository using `gh skill` as shown above. The CLI can also i
 
 ## Versioning
 
-This draft packages version `0.1.1` under `packages/0.1.1/`. A tagged GitHub Release will be created when the public repository is ready.
+Version `0.1.1` is available in `packages/0.1.1/` and as ZIP assets in the GitHub Release.
 
 ## License and use
 
