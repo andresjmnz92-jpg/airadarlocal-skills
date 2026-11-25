@@ -24,9 +24,9 @@ When the owner asks for "a Google post" or "improve my profile", or when the con
 2. Call `run_summary` and `get_gaps`. Use questions where Maps does not show the business to choose relevant topics; do not infer that a post will change those results.
 3. Ask for the missing facts (`[[PEDIR]]`) in one round.
 4. Write the post only about a confirmed service or fact: one idea, plain language and a real call to action with the contact detail the owner gave. If services, area or contact details are missing, provide a template with `[[PEDIR]]`, not publishable copy. No superlatives that cannot be proven.
-5. Before handing over, check every number and promise yourself: if it does not come from the business or the run, ask the owner for the fact or drop the sentence.
+5. Call `check_draft` with the post and `business_id`, address its alerts, and check every number and promise against the owner's facts and the run yourself. The tool does not certify the text.
 6. Hand over the draft and the pending `[[PEDIR]]` items. If the MCP has a publish tool, it only creates the draft and publishing waits for human confirmation.
 
 ## What to hand over
 
-The post draft and any missing facts. The MCP does not publish or validate a draft in a Google profile; the owner reviews the text and copies or publishes it from their account.
+The post draft and any missing facts. The MCP does not publish to a Google profile; `check_draft` catches only some mechanical issues. The owner reviews the text and copies or publishes it from their account.

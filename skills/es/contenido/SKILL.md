@@ -23,7 +23,7 @@ Cuando el dueño pide "escribe la página de X", "arma las preguntas frecuentes"
 2. Llama a `run_summary` y `get_gaps` con la última corrida. Prioriza tú las preguntas donde el negocio pierde más puntos y elige con el dueño cuál escribir.
 3. Junta los datos del negocio que ya hay. Lista lo que falta para ese punto y pídeselo al dueño en una sola ronda de preguntas, no una por una.
 4. Redacta tú la versión final, con la voz del negocio y en el idioma de sus clientes: frases cortas, concretas, sin superlativos que no se puedan probar. Cada dato que falte queda como `[[PEDIR: dato]]`.
-5. Antes de entregar, revisa tú cada cifra y cada promesa: si no sale del negocio ni de la corrida, pide el dato al dueño o quita la frase. Si queda una sin resolver, el texto no se entrega como terminado.
+5. Llama a `check_draft` con el borrador y el `business_id`. Corrige sus alertas. Después revisa tú cada cifra y cada promesa contra los datos del dueño y la corrida: la herramienta solo detecta algunos riesgos y nunca certifica el texto. Si queda una afirmación sin respaldo, no lo entregues como terminado.
 6. Si el dueño quiere datos estructurados, llama a `jsonld`. Una FAQ con `[[PEDIR]]` pendiente no entra al schema.
 
 ## Qué entregar

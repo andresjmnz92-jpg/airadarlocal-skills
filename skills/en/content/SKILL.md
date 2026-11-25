@@ -23,7 +23,7 @@ When the owner asks "write the page for X", "build the FAQ" or "what content sho
 2. Call `run_summary` and `get_gaps` with the latest run. Prioritize the questions where the business loses the most points and pick one to write with the owner.
 3. Gather the business facts you already have. List what is missing for that item and ask the owner in one round of questions, not one at a time.
 4. Write the final version yourself, in the business's voice and the language of its customers: short, concrete sentences, no superlatives that cannot be proven. Every missing fact stays as `[[PEDIR: fact]]`.
-5. Before handing over, check every number and promise yourself: if it does not come from the business or the run, ask the owner for the fact or drop the sentence. If one is left unresolved, the text is not delivered as finished.
+5. Call `check_draft` with the draft and `business_id`, then address its alerts. Check every number and promise against the owner's facts and the run yourself: the tool catches only some risks and never certifies the text. Do not present an unsupported claim as finished.
 6. If the owner wants structured data, call `jsonld`. An FAQ with a pending `[[PEDIR]]` does not go into the schema.
 
 ## What to hand over
