@@ -38,6 +38,17 @@ foreach ($skill in $skills) { gh skill install andresjmnz92-jpg/airadarlocal-ski
 
 For Claude Code, replace `codex` with `claude-code`. To install only one skill, replace the loop with an individual command, for example `gh skill install andresjmnz92-jpg/airadarlocal-skills skills/es/preguntas --agent codex --scope user`. To install at project scope, use `--scope project` instead of `--scope user`.
 
+## Install in Claude Code with the marketplace
+
+The public marketplace offers one plugin per language, so the same workflow is not loaded twice. In a Claude Code session, run:
+
+```text
+/plugin marketplace add andresjmnz92-jpg/airadarlocal-skills
+/plugin install airadarlocal-en@airadarlocal-skills
+```
+
+Choose `airadarlocal-es@airadarlocal-skills` for Spanish. Review the plugin details and select the install scope when Claude Code asks. This plugin installs the skills only. Connect the AI Radar Local MCP separately at `https://app.airadarlocal.com/mcp`.
+
 ## Claude web
 
 1. Download a ZIP for one skill and language from the [version 0.1.2 ZIP packages](packages/0.1.2/). The ZIP contains that skill folder and its `SKILL.md`.
