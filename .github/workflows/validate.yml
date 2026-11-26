@@ -10,17 +10,17 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Check source skills, ZIP packages, and marketplace pins
         run: python scripts/validate_release.py
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Validate Claude Code marketplace
         run: |
           npm install --global @anthropic-ai/claude-code@2.1.332
