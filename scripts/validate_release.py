@@ -44,7 +44,10 @@ def validate() -> None:
                 entries = [item.filename for item in package.infolist()]
                 check(sorted(entries) == sorted([f"{name}/", f"{name}/SKILL.md"]),
                       f"Unexpected ZIP contents: {filename}: {entries}")
-                check(package.read(f"{name}/SKILL.md") == body, f"ZIP differs from skill source: {filename}")
+                # Git checks out LF on Linux; published ZIPs were built on Windows with CRLF.
+                packaged = package.read(f"{name}/SKILL.md")
+                check(packaged.replace(b"\r\n", b"\n") == body.replace(b"\r\n", b"\n"),
+                      f"ZIP differs from skill source: {filename}")
     actual_zips = {p.name for p in package_dir.glob("*.zip")}
     check(actual_zips == expected_zips, f"Missing or extra ZIP packages: {actual_zips ^ expected_zips}")
 
