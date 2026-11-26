@@ -61,9 +61,11 @@ def validate() -> None:
         name = plugin.get("name", "")
         check(name in {"airadarlocal-en", "airadarlocal-es"}, f"Unknown marketplace plugin: {name}")
         lang = name.removeprefix("airadarlocal-")
-        check(set(plugin.get("skills", [])) == {f"./{lang}/{skill}" for skill in SKILLS[lang]}, f"Plugin skills mismatch: {name}")
+        check(set(plugin.get("skills", [])) == {f"./{skill}" for skill in SKILLS[lang]}, f"Plugin skills mismatch: {name}")
         source = plugin.get("source", {})
-        check(source.get("source") == "git-subdir" and source.get("path") == "skills", f"Plugin source mismatch: {name}")
+        check(source.get("source") == "git-subdir" and source.get("path") == f"skills/{lang}", f"Plugin source mismatch: {name}")
+        check(source.get("url") == "https://github.com/andresjmnz92-jpg/airadarlocal-skills.git",
+              f"Plugin source must use public HTTPS Git: {name}")
         ref = source.get("ref")
         check(isinstance(ref, str) and ref.startswith("v"), f"Plugin ref missing: {name}")
         check((ROOT / "packages" / ref[1:]).is_dir(), f"Plugin points to unreleased package: {ref}")

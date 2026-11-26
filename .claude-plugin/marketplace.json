@@ -25,19 +25,19 @@
       "tags": ["local-seo", "ai-visibility", "marketing"],
       "source": {
         "source": "git-subdir",
-        "url": "andresjmnz92-jpg/airadarlocal-skills",
-        "path": "skills",
+        "url": "https://github.com/andresjmnz92-jpg/airadarlocal-skills.git",
+        "path": "skills/en",
         "ref": "v0.1.1",
         "sha": "035010b093110792954e05c4e42798fd02f2c07d"
       },
       "strict": false,
       "skills": [
-        "./en/90-day-plan",
-        "./en/content",
-        "./en/gaps",
-        "./en/google-profile",
-        "./en/questions",
-        "./en/technical-check"
+        "./90-day-plan",
+        "./content",
+        "./gaps",
+        "./google-profile",
+        "./questions",
+        "./technical-check"
       ]
     },
     {
@@ -55,19 +55,19 @@
       "tags": ["local-seo", "ai-visibility", "marketing"],
       "source": {
         "source": "git-subdir",
-        "url": "andresjmnz92-jpg/airadarlocal-skills",
-        "path": "skills",
+        "url": "https://github.com/andresjmnz92-jpg/airadarlocal-skills.git",
+        "path": "skills/es",
         "ref": "v0.1.1",
         "sha": "035010b093110792954e05c4e42798fd02f2c07d"
       },
       "strict": false,
       "skills": [
-        "./es/chequeo-tecnico",
-        "./es/contenido",
-        "./es/huecos",
-        "./es/perfil-google",
-        "./es/plan-90-dias",
-        "./es/preguntas"
+        "./chequeo-tecnico",
+        "./contenido",
+        "./huecos",
+        "./perfil-google",
+        "./plan-90-dias",
+        "./preguntas"
       ]
     }
   ]
