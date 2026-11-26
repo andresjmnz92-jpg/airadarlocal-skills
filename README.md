@@ -1,6 +1,6 @@
 # AI Radar Local Agent Skills
 
-Version: `0.1.1`
+Version: `0.1.2` (draft)
 
 Bilingual Agent Skills for local visibility research and content workflows. These skills are designed to work with the AI Radar Local MCP at `https://app.airadarlocal.com/mcp`; connect the MCP separately in your AI client. The skills provide workflow guidance. They do not grant access to an account or business data by themselves.
 
@@ -51,7 +51,7 @@ Choose `airadarlocal-es@airadarlocal-skills` for Spanish. Review the plugin deta
 
 ## Claude web
 
-1. Download a ZIP for one skill and language from the [version 0.1.1 ZIP packages](packages/0.1.1/). The ZIP contains that skill folder and its `SKILL.md`.
+1. Download a ZIP for one skill and language from the [version 0.1.2 ZIP packages](packages/0.1.2/). The ZIP contains that skill folder and its `SKILL.md`.
 2. In Claude, open **Customize → Skills → Create skill → Upload a skill** and upload the ZIP.
 3. Enable the skill. Connect AI Radar Local MCP separately if you want the skill to use your Radar account.
 
@@ -59,7 +59,7 @@ Skill availability and upload options can depend on your Claude plan or workspac
 
 ## ChatGPT web
 
-1. Download a ZIP for one skill and language from the [version 0.1.1 ZIP packages](packages/0.1.1/).
+1. Download a ZIP for one skill and language from the [version 0.1.2 ZIP packages](packages/0.1.2/).
 2. Open **Skills**, choose **Create → Upload from your computer**, and upload the ZIP if the feature is available for your account or workspace.
 3. Enable the skill. Connect AI Radar Local MCP separately; a skill package does not configure the MCP connection.
 
@@ -69,7 +69,7 @@ Install from this repository using `gh skill` as shown above. The CLI can also i
 
 ## Versioning
 
-Version `0.1.1` is available in `packages/0.1.1/` and as ZIP assets in the GitHub Release.
+Version `0.1.2` is prepared in `packages/0.1.2/`. Version `0.1.1` remains available in its GitHub Release.
 
 ## License and use
 
